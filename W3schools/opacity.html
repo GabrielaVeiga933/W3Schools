@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Opacity</title>
+
+  <style>
+    h1 {
+      text-align: center;
+      font-size: 2.5rem;
+      color: #5e2a84;
+      margin-bottom: 30px;
+      text-shadow: 0 2px 6px rgba(106, 75, 175, 0.1);
+    }
+
+    .box {
+      width: 200px;
+      height: 100px;
+      margin: 20px auto;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 600;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .opaque {
+      background-color: #6a4baf;
+      opacity: 1;
+    }
+
+    .semi {
+      background-color: #6a4baf;
+      opacity: 0.5;
+    }
+
+    .transparent {
+      background-color: #6a4baf;
+      opacity: 0.2;
+    }
+  </style>
+</head>
+<body>
+  <h1>CSS Opacity</h1>
+
+  <div class="box opaque">Opacidade: 1 (totalmente visível)</div>
+  <div class="box semi">Opacidade: 0.5 (meio transparente)</div>
+  <div class="box transparent">Opacidade: 0.2 (quase invisível)</div>
+
+</body>
+</html>

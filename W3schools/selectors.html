@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Selectors</title>
+  <style>
+    h1 {
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 2.5em;
+      color: #5e2a84;
+    }
+
+    .example-box {
+      max-width: 700px;
+      margin: 0 auto 30px;
+      text-align: center;
+    }
+
+    p {
+      font-size: 1.1em;
+      margin: 15px auto;
+      max-width: 600px;
+      line-height: 1.6;
+      padding: 12px 16px;
+      border-radius: 8px;
+      background-color: #e4d1f4;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    }
+
+    /* Seletores */
+    p { 
+      color: green; 
+    }
+
+    #especial { 
+      color: red; 
+      background-color: #ffd6d6; 
+      font-weight: bold;
+    }
+
+    .destaque { 
+      font-weight: bold; 
+      color: blue; 
+      background-color: #d6e8ff; 
+    }
+  </style>
+</head>
+<body>
+  <h1>CSS Selectors</h1>
+
+  <div class="example-box">
+    <p>Este parágrafo foi estilizado com o seletor <b>p</b>.</p>
+    <p id="especial">Este parágrafo usa um seletor de <b>ID</b>.</p>
+    <p class="destaque">Este parágrafo usa um seletor de <b>classe</b>.</p>
+  </div>
+</body>
+</html>

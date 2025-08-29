@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Tables</title>
+  <style>
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 2.5em;
+      color: #5e2a84;
+    }
+
+    .example-box {
+      max-width: 800px;
+      margin: 0 auto 40px;
+      padding: 20px;
+      text-align: center;
+      border-radius: 10px;
+      background-color: #ffffff;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    }
+
+    th, td {
+      border: 1px solid #ddd;
+      padding: 12px;
+      text-align: center;
+      font-size: 1em;
+    }
+
+    th {
+      background-color: #d6e8ff;
+      color: #3a2159;
+      font-weight: bold;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+
+    tr:hover {
+      background-color: #f1f1f1;
+    }
+  </style>
+</head>
+<body>
+  <h1>CSS Tables</h1>
+
+  <div class="example-box">
+    <table>
+      <tr>
+        <th>Nome</th>
+        <th>Idade</th>
+      </tr>
+      <tr>
+        <td>Maria</td>
+        <td>25</td>
+      </tr>
+      <tr>
+        <td>João</td>
+        <td>30</td>
+      </tr>
+      <tr>
+        <td>Gabriela</td>
+        <td>28</td>
+      </tr>
+    </table>
+  </div>
+</body>
+</html>

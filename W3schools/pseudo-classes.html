@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>CSS Pseudo-classes</title>
+  <style>
+
+    h1 {
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 2.5em;
+      color: #5e2a84;
+    }
+
+    p {
+      text-align: center;
+      font-size: 1.1em;
+      margin: 15px auto;
+      max-width: 600px;
+      line-height: 1.6;
+    }
+
+    .example-box {
+      max-width: 600px;
+      margin: 0 auto 40px;
+      text-align: center;
+    }
+
+    a:link {
+      color: blue;
+      text-decoration: none;
+      padding: 6px 12px;
+      margin: 5px;
+      border-radius: 6px;
+      font-weight: 600;
+      background-color: #e4d1f4;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+      display: inline-block;
+    }
+
+    a:visited {
+      color: purple;
+    }
+
+    a:hover {
+      color: red;
+      text-decoration: underline;
+      cursor: pointer;
+      background-color: #fcefee;
+    }
+
+    a:active {
+      color: orange;
+      background-color: #ffe5cc;
+    }
+
+    p:first-child {
+      font-weight: bold;
+      font-size: 1.2em;
+      color: #3a2159;
+    }
+
+    p:last-child {
+      color: green;
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+  <h1>CSS Pseudo-classes</h1>
+
+  <div class="example-box">
+    <p>Primeiro parágrafo (bold)</p>
+    <p>Parágrafo do meio</p>
+    <p>Último parágrafo (verde e itálico)</p>
+  </div>
+
+  <div class="example-box">
+    <p>
+      <a href="#">Passe o mouse aqui</a>
+      <a href="#">Passe o mouse aqui</a>
+    </p>
+  </div>
+</body>
+</html>

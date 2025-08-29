@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>CSS Float</title>
+
+  <style>
+    h1 {
+      text-align: center;
+      color: #5e2a84;
+      margin-bottom: 10px;
+      font-size: 2.8em;
+    }
+
+    .description {
+      background: #e9e4f7;
+      border-radius: 12px;
+      padding: 25px 30px;
+      color: #5e4a8a;
+      font-size: 1.1em;
+      line-height: 1.5;
+      box-shadow: 0 4px 10px rgba(106, 75, 175, 0.15);
+      margin-bottom: 40px;
+      text-align: center;
+    }
+
+    .left {
+      float: left;
+      width: 120px;
+      height: 120px;
+      background-color: #a287e8;
+      margin: 0 20px 20px 0;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(106, 75, 175, 0.3);
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: 700;
+      user-select: none;
+    }
+
+    .right {
+      float: right;
+      width: 120px;
+      height: 120px;
+      background-color: #c89be8;
+      margin: 0 0 20px 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(167, 114, 218, 0.3);
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: 700;
+      user-select: none;
+    }
+
+    .text-content {
+      overflow: hidden; 
+      font-size: 1.1em;
+      color: #4e3d76;
+      margin-bottom: 20px;
+      padding: 0 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>CSS Float</h1>
+
+  <p class="description">
+    A propriedade <strong>float</strong> é usada para posicionar elementos à esquerda ou à direita dentro de um contêiner, permitindo que outros elementos de texto ou conteúdo flutuem ao redor deles.
+  
+
+  <div class="left">Float Left</div>
+  <div class="right">Float Right</div>
+
+  <div class="text-content">
+    <p>O texto aqui se ajusta ao redor dos elementos flutuantes, mostrando como o conteúdo flui de forma natural ao redor dos blocos posicionados com <code>float</code>.</p>
+  
+</body>
+</html>

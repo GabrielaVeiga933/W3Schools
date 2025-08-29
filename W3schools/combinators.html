@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Combinators</title>
+
+  <style>
+   
+    h1 {
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 2.8em;
+      color: #5e2a84;
+    }
+
+    .info {
+      max-width: 700px;
+      margin: 0 auto 40px;
+      font-size: 1.1em;
+      text-align: center;
+    }
+
+    .demo-box {
+      background-color: #ffffff;
+      border: 2px solid #d3c4f3;
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 600px;
+      margin: 0 auto;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+
+    .demo-box p {
+      padding: 10px;
+      border-radius: 6px;
+      margin: 10px 0;
+      background-color: #eee6ff;
+    }
+
+    div > p {
+      color: red;
+    }
+
+    div p {
+      font-weight: bold;
+    }
+
+    code {
+      background-color: #e4d1f4;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-family: monospace;
+      color: #5e2a84;
+    }
+  </style>
+</head>
+<body>
+  <h1>CSS Combinators</h1>
+
+  <div class="info">
+    <p><code>div  p</code> → estiliza apenas os parágrafos que são filhos diretos de uma <code>div</code>.</p>
+    <p><code>div p</code> → estiliza todos os parágrafos que estão dentro de uma <code>div</code>, em qualquer nível.</p>
+  </div>
+
+  <div class="demo-box"> 
+    <p>Este parágrafo é filho direto do div → vermelho + bold</p>
+    <span><p>Este parágrafo está dentro de span dentro do div → apenas bold</p></span>
+  </div>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Overflow</title>
+
+  <style>
+    h1 {
+      text-align: center;
+      font-size: 2.5rem;
+      color: #5e2a84;
+      margin-bottom: 30px;
+      text-shadow: 0 2px 6px rgba(106, 75, 175, 0.1);
+    }
+
+    p {
+      font-size: 1.1rem;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .overflow-box {
+      width: 250px;
+      height: 100px;
+      border: 2px solid #3a2159;
+      overflow: scroll;
+      padding: 10px;
+      margin: 0 auto;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    }
+
+    code {
+      background-color: #e4dbfa;
+      padding: 4px 8px;
+      border-radius: 5px;
+      font-size: 0.95rem;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>CSS Overflow</h1>
+
+  <p>A propriedade <code>overflow</code> define o que acontece quando o conteúdo de um elemento ultrapassa suas dimensões. Neste exemplo, usamos <code>overflow: scroll</code>:</p>
+
+  <div class="overflow-box">
+    O overflow possui os seguintes valores:
+<br>
+<br>
+visible- Padrão. O estouro não é recortado. O conteúdo é renderizado fora da caixa do elemento.
+<br>
+<br>
+hidden- O estouro é recortado e o restante do conteúdo fica oculto
+<br>
+<br>
+scroll- Barras de rolagem adicionadas. O usuário deve rolar para ver todo o conteúdo.
+<br>
+<br>
+auto- Semelhante a scroll, mas adiciona barras de rolagem somente quando necessário
+
+</body>
+</html>

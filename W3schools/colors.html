@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Colors</title>
+
+  <style>
+
+    h1 {
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 2.8em;
+      color: #5e2a84;
+    }
+
+    h2 {
+      text-align: center;
+      margin-top: 60px;
+      margin-bottom: 20px;
+      color: #7c3ead;
+    }
+
+    p {
+      width: 320px;
+      margin: 20px auto;
+      padding: 15px;
+      font-weight: 600;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+      text-align: center;
+    }
+
+    .named { color: tomato; }
+    .hex { color: #1e90ff; }
+    .rgb { color: rgb(60,179,113); }
+    .hsl { color: hsl(300, 76%, 40%); }
+
+  
+    .bg-hex {
+      background-color: #ffdd57;
+      color: #333;
+    }
+
+    .bg-rgba {
+      background-color: rgba(255, 99, 71, 0.5);
+      color: #3a2159;
+    }
+
+    .bg-hsla {
+      background-color: hsla(210, 100%, 50%, 0.4);
+      color: #3a2159;
+    }
+
+  
+    .palette {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 30px;
+    }
+
+    .color-box {
+      width: 100px;
+      height: 100px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.8em;
+      font-weight: 600;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <h1>CSS Colors</h1>
+
+
+  <p class="named">Cor pelo nome: Tomato</p>
+  <p class="hex">Cor em HEX: #1e90ff</p>
+  <p class="rgb">Cor em RGB: rgb(60,179,113)</p>
+  <p class="hsl">Cor em HSL: hsl(300, 76%, 40%)</p>
+
+  <h2>Exemplos com background-color</h2>
+  <p class="bg-hex">Fundo em HEX: #ffdd57</p>
+  <p class="bg-rgba">Fundo com transparência (rgba): rgba(255, 99, 71, 0.5)</p>
+  <p class="bg-hsla">Fundo com transparência (hsla): hsla(210, 100%, 50%, 0.4)</p>
+
+  <h2>Paleta de Cores</h2>
+  <div class="palette">
+    <div class="color-box" style="background-color: #e63946;">#e63946</div>
+    <div class="color-box" style="background-color: #f1faee; color: #333;">#f1faee</div>
+    <div class="color-box" style="background-color: #a8dadc;">#a8dadc</div>
+    <div class="color-box" style="background-color: #457b9d;">#457b9d</div>
+    <div class="color-box" style="background-color: #1d3557;">#1d3557</div>
+    <div class="color-box" style="background-color: #7b2cbf;">#7b2cbf</div>
+    <div class="color-box" style="background-color: #ffb703; color: #333;">#ffb703</div>
+  </div>
+</body>
+</html>

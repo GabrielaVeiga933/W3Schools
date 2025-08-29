@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Display</title>
+
+  <style>
+                       
+    h1 {
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 2.8em;
+      color: #5e2a84;
+    }
+
+    p {
+      text-align: center;
+      font-size: 1.1em;
+      margin: 20px auto 10px;
+      max-width: 600px;
+    }
+
+    .example-box {
+      max-width: 600px;
+      margin: 0 auto 40px;
+      text-align: center;
+    }
+
+    
+    span.block {
+      display: block;
+      background-color: #b8f2e6;
+      color: #3a2159;
+      padding: 10px;
+      margin: 8px auto;
+      border-radius: 6px;
+      font-weight: 600;
+      width: 60%;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    }
+
+    div.inline {
+      display: inline;
+      background-color: #ffb4a2;
+      color: #3a2159;
+      padding: 10px 15px;
+      margin: 5px;
+      border-radius: 6px;
+      font-weight: 600;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    }
+
+    code {
+      background-color: #e4d1f4;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-family: monospace;
+      color: #5e2a84;
+    }
+  </style>
+</head>
+<body>
+  <h1>CSS Display</h1>
+
+  <div class="example-box">
+    <p><b><code>display: block</code></b> transforma elementos inline em blocos (quebram a linha):</p>
+    <span class="block">Span como bloco</span>
+    <span class="block">Outro span bloco</span>
+  </div>
+
+  <div class="example-box">
+    <p><b><code>display: inline</code></b> mantém os elementos na mesma linha:</p>
+    <div class="inline">Div inline</div>
+    <div class="inline">Outra div inline</div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Dropdowns</title>
+
+  <style>
+    h1 {
+      color: #5e2a84;
+      margin-bottom: 10px;
+      font-size: 2.8em;
+    }
+
+    .description {
+      max-width: 600px;
+      margin: 0 auto 40px;
+      font-size: 1.1em;
+      color: #5e4a8a;
+      line-height: 1.5;
+    }
+
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropbtn {
+      background-color: #6a4baf;
+      color: white;
+      padding: 14px 24px;
+      font-size: 18px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      box-shadow: 0 4px 10px rgba(106, 75, 175, 0.4);
+      font-weight: 600;
+      user-select: none;
+    }
+
+    .dropbtn:hover,
+    .dropdown:hover .dropbtn {
+      background-color: #5a3a9a;
+      box-shadow: 0 6px 12px rgba(90, 58, 154, 0.6);
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #fff;
+      min-width: 180px;
+      box-shadow: 0 8px 16px rgba(106, 75, 175, 0.2);
+      border-radius: 8px;
+      z-index: 10;
+      top: 110%;
+      left: 50%;
+      transform: translateX(-50%);
+      padding: 8px 0;
+    }
+
+    .dropdown-content a {
+      color: #3a2159;
+      padding: 12px 20px;
+      text-decoration: none;
+      display: block;
+      font-weight: 600;
+      transition: background-color 0.3s ease;
+      border-radius: 6px;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #e1d9f7;
+      color: #6a4baf;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <h1>CSS Dropdowns</h1>
+  <p class="description">
+    Dropdowns são menus suspensos que permitem ao usuário escolher uma opção dentro de uma lista. 
+
+  <div class="dropdown">
+    <button class="dropbtn">Dropdown</button>
+    <div class="dropdown-content">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>CSS Lists</title>
+
+  <style>
+    h1 {
+      text-align: center;
+      color: #5e2a84;
+      font-size: 2.5rem;
+      margin-bottom: 40px;
+    }
+
+    h2 {
+      margin-top: 40px;
+      font-size: 1.6rem;
+      color: #5a409f;
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 5px;
+    }
+
+    ul, ol {
+      background-color: #eee6fb;
+      padding: 20px;
+      border-radius: 12px;
+      margin-top: 15px;
+      box-shadow: 0 4px 10px rgba(106, 75, 175, 0.1);
+    }
+
+    li {
+      margin: 8px 0;
+      font-size: 1.1rem;
+      color: #4e3d76;
+    }
+
+    ul.disc {
+      list-style-type: disc;
+    }
+
+    ul.square {
+      list-style-type: square;
+    }
+
+    ul.none {
+      list-style-type: none;
+    }
+
+    ol.upper {
+      list-style-type: upper-roman;
+    }
+
+    ol.lower {
+      list-style-type: lower-alpha;
+    }
+  </style>
+</head>
+<body>
+  <h1>CSS Lists</h1>
+
+  <h2>Listas não ordenadas</h2>
+  <ul class="disc">
+    <li>Item A</li>
+    <li>Item B</li>
+  </ul>
+
+  <ul class="square">
+    <li>Item A</li>
+    <li>Item B</li>
+  </ul>
+
+  <ul class="none">
+    <li>Item A (sem marcador)</li>
+    <li>Item B (sem marcador)</li>
+  </ul>
+
+  <h2>Listas ordenadas</h2>
+  <ol class="upper">
+    <li>Primeiro</li>
+    <li>Segundo</li>
+  </ol>
+
+  <ol class="lower">
+    <li>Primeiro</li>
+    <li>Segundo</li>
+  </ol>
+</body>
+</html>

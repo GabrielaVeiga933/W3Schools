@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Align</title>
+
+  <style> 
+    h1 {
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 2.8em;
+      color: #5e2a84;
+    }
+
+    section {
+      margin-bottom: 60px;
+    }
+
+    h2 {
+      font-size: 1.5em;
+      margin-bottom: 20px;
+      color: #7c3ead;
+    }
+
+    p {
+      font-size: 1.1em;
+      max-width: 600px;
+      margin: 15px auto 0;
+    }
+
+    code {
+      background-color: #e4d1f4;
+      color: #5e2a84;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-family: monospace;
+    }
+
+    .example {
+      width: 300px;
+      height: 100px;
+      background: linear-gradient(135deg, #9d4edd, #7b2cbf);
+      color: white;
+      border-radius: 10px;
+      padding: 20px;
+      margin-top: 20px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      font-weight: 600;
+    }
+
+    .center-horizontal {
+      margin: 0 auto;
+    }
+
+    .flex-center {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+    }
+
+    .grid-center {
+      display: grid;
+      place-items: center;
+      margin: 0 auto;
+    }
+
+  </style>
+</head>
+<body>
+
+<h1>Centralização com CSS</h1>
+
+<section>
+  <h2>1. Alinhamento Horizontal com: <br><code>margin: 0 auto;</code></h2>
+  <div class="example center-horizontal">Este bloco está centralizado horizontalmente.</div>
+  <p>Usamos <code>margin: 0 auto;</code> para centralizar um bloco com largura definida.</p>
+</section>
+
+<section>
+  <h2>2. Alinhamento com Flexbox</h2>
+  <div class="example flex-center">
+    <p>Este bloco está centralizado horizontal e verticalmente com Flexbox.</p>
+  </div>
+  <p>
+    Com: <br>
+    <code>display: flex;</code><br>
+    <code>justify-content: center;</code><br>
+    <code>align-items: center;</code><br>
+    é possível alinhar o conteúdo dentro do bloco.
+  </p>
+</section>
+
+<section>
+  <h2>3. Alinhamento com Grid</h2>
+  <div class="example grid-center">
+    <p>Centralizado com CSS Grid.</p>
+  </div>
+  <p>
+    CSS Grid permite centralizar com poucas linhas usando: <br>
+    <code>place-items: center;</code>
+  </p>
+</section>
+
+</body>
+</html>
